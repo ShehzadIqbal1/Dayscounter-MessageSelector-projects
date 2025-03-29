@@ -1,0 +1,90 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.close {
+  position: absolute; /* Position it relative to the nearest positioned ancestor or the viewport */
+  top: 20px; /* 20px from the top */
+  right: 20px; /* 20px from the right */
+  border: none; /* Remove default button border */
+  font-size: 24px; /* Larger "×" symbol */
+  cursor: pointer; /* Pointer on hover */
+  color: #333; /* Dark color for the "×" */
+}
+
+.close:hover {
+  color: #6200ea; /* Purple on hover to match the theme */
+}
+
+/* Center the entire steps container */
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height to center vertically */
+  font-family: Arial, sans-serif; /* A clean font */
+}
+
+/* Style the numbers container */
+.numbers {
+  display: flex;
+  gap: 20px; /* Space between the numbers */
+  margin-bottom: 30px; /* Space below the numbers */
+}
+
+/* Style each number circle */
+.numbers div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Make it a circle */
+  background-color: #f0f0f0; /* Light gray background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+/* Highlight the active step (in this case, step 2) */
+.numbers div.active {
+  background-color: #fff; /* White background for the active step */
+  border: 2px solid #6200ea; /* Purple border for the active step */
+  color: #6200ea; /* Purple text for the active step */
+}
+
+/* Style the message */
+.message {
+  font-size: 24px;
+  margin-bottom: 30px; /* Space below the message */
+  color: #333; /* Dark text color */
+  font-weight: bold;
+}
+
+/* Style the buttons container */
+.buttons {
+  display: flex;
+  gap: 20px; /* Space between the buttons */
+}
+
+/* Style the buttons */
+button {
+  padding: 10px 30px; /* Padding for the buttons */
+  border: none;
+  border-radius: 20px; /* Rounded corners for the buttons */
+  background-color: #6200ea; /* Purple background */
+  color: #fff; /* White text */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #3700b3; /* Slightly darker purple on hover */
+}
+
